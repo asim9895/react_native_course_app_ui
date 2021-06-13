@@ -22,7 +22,7 @@ const HomeScreen = ({ navigation }) => {
     return (
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate('CourseScreen');
+          navigation.navigate('CourseScreen', { course: course });
           console.log('screen');
         }}>
         <View
@@ -40,7 +40,7 @@ const HomeScreen = ({ navigation }) => {
             source={course.image}
             style={{
               width: '100%',
-              height: '70%',
+              height: '80%',
               borderRadius: 15,
             }}
           />
